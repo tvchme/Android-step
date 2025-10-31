@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@drawable/background_gradient">
+
+    <!-- 应用标题 -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="计步器"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="50dp" />
+
+    <!-- 步数显示区域 -->
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:background="@drawable/circle_background"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="40dp"
+        android:elevation="8dp">
+
+        <TextView
+            android:id="@+id/stepCountText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/primary_color"
+            android:textSize="56sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="步数"
+            android:textColor="@color/text_secondary"
+            android:textSize="18sp"
+            android:layout_marginTop="8px" />
+
+    </LinearLayout>
+
+    <!-- 状态显示 -->
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="准备开始计步..."
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginBottom="40dp"
+        android:paddingHorizontal="16dp"
+        android:paddingVertical="8dp"
+        android:background="@drawable/status_background" />
+
+    <!-- 按钮区域 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="开始计步"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/primary_color"
+            android:layout_marginEnd="8dp"
+            android:elevation="4dp" />
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_weight="1"
+            android:text="重置"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/reset_color"
+            android:layout_marginStart="8dp"
+            android:elevation="4dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSettings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="设置"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

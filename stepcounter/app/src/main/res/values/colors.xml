@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 主色调 -->
+    <color name="primary_color">#6366F1</color>
+
+    <!-- 重置按钮颜色 -->
+    <color name="reset_color">#EF4444</color>
+
+    <!-- 文字颜色 -->
+    <color name="white">#FFFFFF</color>
+    <color name="text_secondary">#666666</color>
+
+
+    <color name="primary">#2196F3</color>
+    <color name="black">#000000</color>
+    <color name="green">#4CAF50</color>
+    <color name="red">#F44336</color>
+    <color name="blue">#2196F3</color>
+
+</resources>
